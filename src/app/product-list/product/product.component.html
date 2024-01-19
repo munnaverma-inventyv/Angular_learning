@@ -1,0 +1,11 @@
+<p>Product id : {{items.id}} </p>
+        <p>Product Name : {{items.name}}</p>
+        <p>Product Price : {{ items.price}}</p>
+        <!-- <p>Discounted Amount: {{discountPrice()}}</p> -->
+        <p>{{items.inStock>0 ? items.inStock + "is left" : "Out of stock"}}</p>
+        <input [value]="name"/><br>
+        <!-- <button (click)="decrementItem()" [disabled]="boolVal">-</button> -->
+        <!-- <span>{{addToCartItem}}</span> -->
+        <!-- <button (click)="incrementItem()" >+</button><br> -->
+        <!-- <button [disabled]="!(product.inStock>0)" >Buy Now</button> -->
+        <!-- <app-search></app-search> -->

@@ -1,0 +1,16 @@
+<p>product-list </p>
+<div>
+    <input type="radio" name="filte" value="all" [(ngModel)]="selectedFileRadioButton"/><span>all{{selectedFileRadioButton}}</span>
+    <input type="radio" name="filte" value="tru" [(ngModel)]="selectedFileRadioButton"/><span>true{{selectedFileRadioButton}}</span>
+    <input type="radio" name="filte" value="false" [(ngModel)]="selectedFileRadioButton"/><span>false{{selectedFileRadioButton}}</span>
+    <input type="text" [(ngModel)]="changeInput"/>
+    <p>{{changeInput}}</p>
+</div>
+<div >
+    @for(item of product;track item.id){
+        <app-product [items]="item" [name]="name"></app-product>
+    }
+    
+</div>
+
+

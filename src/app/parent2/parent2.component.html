@@ -1,0 +1,9 @@
+<button [disabled]="Stock<=0">Buy Now</button>
+
+<!-- <input type="text" (input)="Onchange($event)"> -->
+
+<input type="text" [(ngModel)]="name">
+{{name}}
+
+
+<app-child2 [dataRecive]="data" (emmite)="reciveDta($event)"></app-child2>
